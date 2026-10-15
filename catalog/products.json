@@ -1,0 +1,275 @@
+[
+  {
+    "id": "P01",
+    "name": "Ferrocher Cookies",
+    "size": "40-42 pcs",
+    "price": 41,
+    "description": "Biskut bersalut coklat pekat bertabur kacang badam cincang, terinspirasi rasa Ferrero Rocher.",
+    "image": "ferrocher-cookies.jpg",
+    "active": true
+  },
+  {
+    "id": "P02",
+    "name": "Black Beauty",
+    "size": "45-48 pcs",
+    "price": 40,
+    "description": "Biskut coklat gelap dengan drizzle coklat milk di atas — rangup dan kaya rasa coklat. Rasa yang unik.",
+    "image": "black-beauty.jpg",
+    "active": true
+  },
+  {
+    "id": "P03",
+    "name": "Almond London",
+    "size": "50-52 pcs",
+    "price": 40,
+    "description": "Biskut rangup dengan taburan badam cincang di atas — rangup di luar, lembut di dalam. Setiap rumah wajib ada biskut ini.",
+    "image": "almond-london.jpg",
+    "active": true
+  },
+  {
+    "id": "P04",
+    "name": "Vanila Choc Chip",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut vanila lembut bercip coklat, wangi dan rangup. Menggunakan butter berkualiti tinggi.",
+    "image": "vanila-choc-chip.jpg",
+    "active": true
+  },
+  {
+    "id": "P05",
+    "name": "Biskut Makmur",
+    "size": "50-52 pcs",
+    "price": 39,
+    "description": "Biskut kacang tradisional bersalut gula icing — lembut dan cair di mulut.",
+    "image": "biskut-makmur.jpg",
+    "active": true
+  },
+  {
+    "id": "P06",
+    "name": "Red Velvet CC",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut baldu merah yang rangup dengan cip coklat hitam dan putih.",
+    "image": "red-velvet-cc.jpg",
+    "active": true
+  },
+  {
+    "id": "P07",
+    "name": "Tart Hazelnut",
+    "size": "45 pcs",
+    "price": 40,
+    "description": "Tart coklat berintikan hazelnut spread.",
+    "image": "tart-hazelnut.jpg",
+    "active": true
+  },
+  {
+    "id": "P08",
+    "name": "Ombak Rindu",
+    "size": "45-48 pcs",
+    "price": 40,
+    "description": "Biskut coklat bertekstur rangup, dihiasi badam biji dan dihias dengan white coklat — antara paling laris.",
+    "image": "ombak-rindu.jpg",
+    "active": true
+  },
+  {
+    "id": "P09",
+    "name": "Red Pearl Cookies",
+    "size": "50-52 pcs",
+    "price": 40,
+    "description": "Biskut dengan potongan ceri manis di dalam adunan rangup — manis dan berwarna-warni.",
+    "image": "red-pearl-cookies.jpg",
+    "active": true
+  },
+  {
+    "id": "P25",
+    "name": "Snow Almond",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut rasa kopi, rangup, disalut coklat dan breadcrumb. Rasa yang unik dan sangat sesuai dengan penggemar kopi.",
+    "image": "snow-almond.jpg",
+    "active": true
+  },
+  {
+    "id": "P10",
+    "name": "Semperit Klasik",
+    "size": "48 pcs",
+    "price": 39,
+    "description": "Biskut semperit tradisional berbentuk bunga dengan ceri di tengah.",
+    "image": "semperit-klasik.jpg",
+    "active": true
+  },
+  {
+    "id": "P11",
+    "name": "T-cup Fruit N Nuts",
+    "size": "33-35 pcs",
+    "price": 40,
+    "description": "Tart cawan diisi campuran buah-buahan kering dan pelbagai kekacang. Digaul madu dan butter.",
+    "image": "tcup-fruit-n-nuts.jpg",
+    "active": true
+  },
+  {
+    "id": "P12",
+    "name": "Tart Mawar",
+    "size": "50-52 pcs",
+    "price": 40,
+    "description": "Tart berbentuk bunga mawar dengan inti jem nenas — diperbuat daripada butter terpilih, rasa masam manis dan sangat wangi.",
+    "image": "tart-mawar.jpg",
+    "active": true
+  },
+  {
+    "id": "P13",
+    "name": "Tart Blueberry",
+    "size": "50-52 pcs",
+    "price": 40,
+    "description": "Tart gulung berperisa blueberry, campuran pure butter berintikan jem blueberry.",
+    "image": "tart-blueberry.jpg",
+    "active": true
+  },
+  {
+    "id": "P14",
+    "name": "Rocky Donut",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut berbentuk donut ditabur rocky road dan hiasan berwarna-warni.",
+    "image": "rocky-donut.jpg",
+    "active": true
+  },
+  {
+    "id": "P23",
+    "name": "Tart Kerang",
+    "size": "35 pcs",
+    "price": 40,
+    "description": "Tart berbentuk kulit kerang, warna keemasan, berisi jem nenas.",
+    "image": "tart-kerang.jpg",
+    "active": true
+  },
+  {
+    "id": "P15",
+    "name": "Tart Nenas",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Tart gulung berinti jem nenas klasik. Sangat laris dan sentiasa habis setiap tahun.",
+    "image": "tart-nenas.jpg",
+    "active": true
+  },
+  {
+    "id": "P16",
+    "name": "Suji Badam",
+    "size": "48 pcs",
+    "price": 40,
+    "description": "Biskut suji lembut berbentuk bulat, dihiasi badam di atas.",
+    "image": "suji-badam.jpg",
+    "active": true
+  },
+  {
+    "id": "P17",
+    "name": "Hazelnut Button",
+    "size": "40-45 pcs",
+    "price": 41,
+    "description": "Biskut coklat berbentuk butang, digaul dalam almond nibs, berinti hazelnut.",
+    "image": "hazelnut-button.jpg",
+    "active": true
+  },
+  {
+    "id": "P18",
+    "name": "Biskut Aiskrim",
+    "size": "48-50 pcs",
+    "price": 39,
+    "description": "Biskut berbentuk aiskrim mengandungi serbuk badam, dicelup coklat dan ditabur manik warna-warni. Kegemaran kanak-kanak setiap tahun. *Manik bergantung pada stok.",
+    "image": "biskut-aiskrim.jpg",
+    "active": true
+  },
+  {
+    "id": "P19",
+    "name": "Cornflakes Crunchy",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Bebola cornflakes rangup bersalut cornflakes yang diramas kasar.",
+    "image": "cornflakes-crunchy.jpg",
+    "active": true
+  },
+  {
+    "id": "P20",
+    "name": "Biskut Mazola",
+    "size": "48-50 pcs",
+    "price": 39,
+    "description": "Biskut kacang sangat lembut menggunakan minyak Mazola, warna keemasan semula jadi.",
+    "image": "biskut-mazola.jpg",
+    "active": true
+  },
+  {
+    "id": "P21",
+    "name": "Untaian Kasih",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut yang lembut dan cair di mulut dengan bentuk yang unik, menambah selera pembeli. Ada peminatnya yang tersendiri.",
+    "image": "untaian-kasih.jpg",
+    "active": true
+  },
+  {
+    "id": "P22",
+    "name": "Strawberry Swiss",
+    "size": "45-48 pcs",
+    "price": 40,
+    "description": "Biskut bulat lembut berperisa jem strawberi di tengahnya. Cair di mulut dan sangat wangi.",
+    "image": "strawberry-swiss.jpg",
+    "active": true
+  },
+  {
+    "id": "P24",
+    "name": "Pandan Nyoir Cookies",
+    "size": "48-50 pcs",
+    "price": 40,
+    "description": "Biskut yang diperbuat daripada butter dan kelapa. Sangat rangup, sedap dan wangi semerbak.",
+    "image": "pandan-nyoir.jpg",
+    "active": true
+  },
+  {
+    "id": "P26",
+    "name": "Rainbow Cookies",
+    "size": "38-40 pcs",
+    "price": 27,
+    "description": "Biskut berwarna-warni pelangi yang ceria — kegemaran kanak-kanak.",
+    "image": "rainbow-cookies.jpg",
+    "active": true
+  },
+  {
+    "id": "P27",
+    "name": "Mix Pack (4 Jenis Biskut)",
+    "size": "4 jenis biskut",
+    "price": 26,
+    "description": "Satu bekas berpetak dengan 4 jenis biskut. *Jenis biskut adalah rawak (random cookies).",
+    "image": "mix-pack-4.jpg",
+    "active": true
+  },
+  {
+    "id": "P28",
+    "name": "Mix Pack (6 Jenis Biskut)",
+    "size": "6 jenis biskut",
+    "price": 37,
+    "description": "Satu bekas berpetak dengan 6 jenis biskut. *Jenis biskut adalah rawak (random cookies).",
+    "image": "mix-pack-6.jpg",
+    "active": true
+  },
+  {
+    "id": "P29",
+    "name": "Combo Box",
+    "size": "1 kotak",
+    "price": 36,
+    "description": "Kotak combo berpetak berisi pelbagai jenis biskut raya — sesuai untuk hidangan tetamu atau buah tangan.",
+    "note": "*Corak kotak bergantung pada stok semasa daripada pembekal.",
+    "image": "combo-box.jpg",
+    "active": true,
+    "agentDiscount": 4
+  },
+  {
+    "id": "P30",
+    "name": "Gift Box",
+    "size": "1 kotak hadiah",
+    "price": 55,
+    "description": "Kotak hadiah eksklusif bertali berisi balang biskut — sesuai sebagai hadiah raya untuk keluarga dan rakan.",
+    "note": "*Corak kotak bergantung pada stok semasa daripada pembekal.",
+    "image": "gift-box.jpg",
+    "active": true
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "name": "tempahan-biskut-raya-jijah-bake4u-2027",
+  "version": "1.0.0",
+  "description": "Jijah Bake4U - Tempahan Biskut Raya Jijah Bake4U 2027 - Customer Order + Admin System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {}
+}
