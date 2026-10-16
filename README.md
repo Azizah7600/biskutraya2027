@@ -7,7 +7,7 @@
 > - **TIADA ansuran.** Pelanggan bayar penuh: jumlah biskut + kos postage.
 > - **Dua cara bayar:** ToyyibPay, ATAU pindahan bank + muat naik resit. Resit disemak admin di `/admin/resit` (SAHKAN / TOLAK). Fail resit disimpan dalam `data/receipts/` (folder `data/` mesti Volume kekal di Railway).
 > - **Tambah biskut kemudian:** pelanggan buka *Semak Tempahan Saya* → **+ TAMBAH BISKUT**. Setiap tambahan jadi satu bayaran baru (termasuk beza kos postage jika bekas bertambah). Hanya untuk biskut yang masih ada stok.
-> - Harga ejen: harga biskut **tolak RM5 sebekas** (komisyen RM5) bermula 50 bekas terkumpul. **Combo Box: tolak RM4** (medan `"agentDiscount": 4` dalam `catalog/products.json`). Tetapan dalam `lib/helpers.js` → `AGENT_PRICE_TIERS`.
+> - Harga ejen: harga biskut **tolak RM5 sebekas** (komisyen RM5) bermula 50 bekas terkumpul. **Produk bawah RM39 (Rainbow Cookies, Mix Pack 4 & 6, Combo Box): tolak RM4 sahaja** — automatik ikut harga (`AGENT_LOW_PRICE_THRESHOLD` dalam `lib/helpers.js`). Tetapan dalam `lib/helpers.js` → `AGENT_PRICE_TIERS`.
 > - **Stok:** admin isi stok di `/admin/stok`. Stok berkurang automatik setiap tempahan / tambahan. Pelanggan hanya boleh **tambah biskut selagi ada stok**.
 > - Akaun bank lalai: Maybank 5630 1928 4855 (Bake For You Enterprise) — boleh ditukar melalui Environment Variables.
 

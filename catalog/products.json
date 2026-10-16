@@ -259,8 +259,7 @@
     "description": "Kotak combo berpetak berisi pelbagai jenis biskut raya — sesuai untuk hidangan tetamu atau buah tangan.",
     "note": "*Corak kotak bergantung pada stok semasa daripada pembekal.",
     "image": "combo-box.jpg",
-    "active": true,
-    "agentDiscount": 4
+    "active": true
   },
   {
     "id": "P30",
