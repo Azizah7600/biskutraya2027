@@ -231,7 +231,8 @@
     "price": 27,
     "description": "Biskut berwarna-warni pelangi yang ceria — kegemaran kanak-kanak.",
     "image": "rainbow-cookies.jpg",
-    "active": true
+    "active": true,
+    "agentDiscount": 3
   },
   {
     "id": "P27",

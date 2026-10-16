@@ -317,7 +317,7 @@ function stockPage(products) {
 // ejen boleh nampak berapa lagi bekas diperlukan — lebih memberi semangat ejen.
 function commissionCell(r) {
   if (r.containers >= 50 && r.commission > 0) {
-    const rate = 'RM5/bekas, produk bawah RM39: RM4 (50+ bekas terkumpul)';
+    const rate = 'RM5/bekas, bawah RM39: RM4, Rainbow: RM3 (50+ bekas terkumpul)';
     return `<b>${money(r.commission)}</b><br><small style="color:var(--text-muted);">${rate}</small>`;
   }
   const remaining = Math.max(0, 50 - r.containers);
@@ -388,7 +388,7 @@ function agentsPage(rows) {
   return `
   <div class="admin-topbar"><h1>Prestasi Ejen</h1></div>
   <div class="admin-panel">
-    <p style="margin-bottom:16px;color:var(--text-muted);font-size:.85rem;">Harga khas ejen: harga biskut tolak RM5 sebekas (produk bawah RM39 — Rainbow Cookies, Mix Pack, Combo Box — tolak RM4), bermula selepas ejen berdaftar cecah 50 bekas terkumpul. Komisyen ejen = jumlah potongan tersebut.</p>
+    <p style="margin-bottom:16px;color:var(--text-muted);font-size:.85rem;">Harga khas ejen: harga biskut tolak RM5 sebekas (produk bawah RM39 — Mix Pack, Combo Box — tolak RM4; Rainbow Cookies tolak RM3), bermula selepas ejen berdaftar cecah 50 bekas terkumpul. Komisyen ejen = jumlah potongan tersebut.</p>
     <table class="data-table">
       <thead><tr><th>Ejen</th><th>Jumlah Order</th><th>Jumlah Pelanggan</th><th>Jumlah Bekas</th><th>Jumlah Jualan</th><th>Komisyen Ejen</th></tr></thead>
       <tbody>${rows.map(r => `<tr><td><b>${escapeHtml(r.agentName)}</b></td><td>${r.orderCount}</td><td>${r.customerCount}</td><td>${r.containers}</td><td>${money(r.sales)}</td><td>${commissionCell(r)}</td></tr>`).join('')}</tbody>
