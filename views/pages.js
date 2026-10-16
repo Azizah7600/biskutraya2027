@@ -582,6 +582,7 @@ function orderStatusBody(order, items, installments, justReturned, canAddItems =
           <div><b>${escapeHtml(order.customer_name)}</b><br/><span style="font-size:.85rem;color:var(--text-muted);">${escapeHtml(order.phone)} &middot; ${escapeHtml(order.delivery_method || '')}</span></div>
           <div>${statusBadge(order.payment_status === 'LENGKAP' ? 'PAID' : order.payment_status === 'SEBAHAGIAN' ? 'PENDING' : 'UNPAID')}</div>
         </div>
+        ${order.shipping_status === 'DIHANTAR' ? `<div class="alert" style="background:#e3f3ea;color:#1d6b45;margin-bottom:16px;">📦 <b>Tempahan anda sudah ${order.delivery_method === 'Pos/Kurier' ? 'dipos' : 'dihantar / sedia diambil'}</b> pada ${formatDateTimeMY(order.shipped_at)}.${order.courier ? ` Kurier: <b>${escapeHtml(order.courier)}</b>.` : ''}${order.tracking_no ? ` No. tracking: <b>${escapeHtml(order.tracking_no)}</b>.` : ''}</div>` : ''}
         <h3>Biskut Ditempah</h3>
         <table class="installment-table">
           <thead><tr><th>Biskut</th><th>Kuantiti</th><th>Harga</th><th>Subtotal</th></tr></thead>

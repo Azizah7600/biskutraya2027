@@ -4,6 +4,7 @@ const MENU = [
   { href: '/admin/dashboard', label: 'Dashboard', key: 'dashboard', icon: '📊' },
   { href: '/admin/orders', label: 'Semua Tempahan', key: 'orders', icon: '🧾' },
   { href: '/admin/resit', label: 'Semak Resit Bayaran', key: 'receipts', icon: '🧾' },
+  { href: '/admin/packing', label: 'Packing & Penghantaran', key: 'packing', icon: '📦' },
   { href: '/admin/products', label: 'Ringkasan Biskut', key: 'products', icon: '🍪' },
   { href: '/admin/production', label: 'Perancangan Pengeluaran', key: 'production', icon: '🏭' },
   { href: '/admin/stok', label: 'Stok Biskut', key: 'stock', icon: '📦' },

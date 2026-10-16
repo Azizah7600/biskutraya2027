@@ -1,4 +1,5 @@
 const { escapeHtml, money, formatDateTimeMY, monthLabelMY, CONFIG } = require('../lib/helpers');
+const { shippingBadge, shippingInfo, shipForm, unshipForm } = require('./packingPages');
 
 function loginPage(error) {
   return `<!DOCTYPE html>
@@ -108,6 +109,8 @@ function ordersPage(orders, filters, agents) {
         <option value="LENGKAP" ${filters.filter === 'LENGKAP' ? 'selected' : ''}>Sudah Lengkap</option>
         <option value="LAYAK" ${filters.filter === 'LAYAK' ? 'selected' : ''}>Layak Cabutan</option>
         <option value="TIDAK_LAYAK" ${filters.filter === 'TIDAK_LAYAK' ? 'selected' : ''}>Tidak Layak</option>
+        <option value="SEDIA_PACK" ${filters.filter === 'SEDIA_PACK' ? 'selected' : ''}>Sedia Untuk Pack</option>
+        <option value="DIHANTAR" ${filters.filter === 'DIHANTAR' ? 'selected' : ''}>Sudah Dihantar</option>
       </select>
       <select name="agent">
         <option value="">Semua Ejen</option>
@@ -121,10 +124,10 @@ function ordersPage(orders, filters, agents) {
       <table class="data-table">
         <thead><tr>
           <th>Order ID</th><th>Tarikh</th><th>Nama</th><th>Telefon</th><th>Ejen</th><th>Bekas</th>
-          <th>Jumlah</th><th>Dibayar</th><th>Baki</th><th>Status</th><th>Cabutan</th><th></th>
+          <th>Jumlah</th><th>Dibayar</th><th>Baki</th><th>Status</th><th>Penghantaran</th><th>Cabutan</th><th></th>
         </tr></thead>
         <tbody>
-          ${orders.length === 0 ? `<tr><td colspan="12" style="text-align:center;padding:30px;color:var(--text-muted);">Tiada tempahan lagi.</td></tr>` : orders.map(o => `
+          ${orders.length === 0 ? `<tr><td colspan="13" style="text-align:center;padding:30px;color:var(--text-muted);">Tiada tempahan lagi.</td></tr>` : orders.map(o => `
           <tr>
             <td><b>${o.id}</b></td>
             <td>${formatDateTimeMY(o.created_at)}</td>
@@ -136,8 +139,9 @@ function ordersPage(orders, filters, agents) {
             <td>${money(o.paid_amount)}</td>
             <td>${money(o.balance)}</td>
             <td>${statusBadge(o.payment_status === 'LENGKAP' ? 'PAID' : o.payment_status === 'SEBAHAGIAN' ? 'PENDING' : 'UNPAID')}</td>
+            <td>${shippingBadge(o)}</td>
             <td>${o.lucky_draw_status === 'LAYAK' ? '<span class="badge badge-eligible">LAYAK</span>' : '<span class="badge badge-not-eligible">TIDAK</span>'}</td>
-            <td><a href="/admin/orders/${o.id}" class="btn btn-outline btn-sm">DETAIL</a></td>
+            <td style="white-space:nowrap;"><a href="/admin/orders/${o.id}" class="btn btn-outline btn-sm">DETAIL</a> <a href="/admin/orders/${o.id}/slip" target="_blank" class="btn btn-outline btn-sm" title="Slip Packing">🖨</a></td>
           </tr>`).join('')}
         </tbody>
       </table>
@@ -148,7 +152,11 @@ function ordersPage(orders, filters, agents) {
 
 function orderDetailPage(order, items, installments) {
   return `
-  <div class="admin-topbar"><h1>Tempahan ${order.id}</h1><a href="/admin/orders" class="btn btn-outline btn-sm">&larr; Kembali</a></div>
+  <div class="admin-topbar"><h1>Tempahan ${order.id}</h1><div style="display:flex;gap:8px;flex-wrap:wrap;"><a href="/admin/orders/${encodeURIComponent(order.id)}/slip" target="_blank" class="btn btn-primary btn-sm">🖨 SLIP PACKING / PDF</a><a href="/admin/orders" class="btn btn-outline btn-sm">&larr; Kembali</a></div></div>
+  <div class="admin-panel" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+    <div><b>Penghantaran:</b> ${shippingBadge(order)}${shippingInfo(order)}</div>
+    <div>${order.shipping_status === 'DIHANTAR' ? unshipForm(order, `/admin/orders/${encodeURIComponent(order.id)}`) : shipForm(order, `/admin/orders/${encodeURIComponent(order.id)}`)}</div>
+  </div>
   <div class="two-col" style="align-items:flex-start;">
     <div class="admin-panel">
       <h2>Maklumat Pelanggan</h2>
