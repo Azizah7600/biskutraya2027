@@ -299,13 +299,7 @@ function stockPage(products) {
   return `
   <div class="admin-topbar"><h1>Stok Biskut</h1></div>
   <div class="admin-panel">
-    <p style="margin-bottom:16px;color:var(--text-muted);font-size:.85rem;">Isi/kemaskini bilangan bekas untuk setiap jenis biskut, kemudian klik SIMPAN STOK di bawah. Stok ini akan dipaparkan kepada pelanggan di laman <a href="/produk" target="_blank">Katalog Biskut</a>. Biskut yang stoknya 0 akan tertulis "Habis Stok" dan pelanggan tidak boleh menempahnya.</p>
-    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;padding:12px;background:#f6f0e2;border-radius:10px;">
-      <b>Isi cepat:</b> isi semua biskut dengan
-      <input type="number" id="fillAllQty" value="20" min="0" step="1" style="width:80px;padding:6px 8px;border:1px solid var(--border-soft);border-radius:8px;" /> bekas
-      <button type="button" class="btn btn-outline btn-sm" onclick="var v=document.getElementById('fillAllQty').value;document.querySelectorAll('input[name^=stock_]').forEach(function(i){i.value=v;});">ISI SEMUA</button>
-      <small style="color:var(--text-muted);">(kemudian klik SIMPAN STOK di bawah)</small>
-    </div>
+    <p style="margin-bottom:16px;color:var(--text-muted);font-size:.85rem;">Isi/kemaskini bilangan bekas untuk setiap jenis biskut, kemudian klik SIMPAN STOK di bawah. Stok ini akan dipaparkan kepada pelanggan di laman <a href="/produk" target="_blank">Katalog Biskut</a>. Tempahan tetap dibenarkan walaupun stok menunjukkan 0 — angka ini untuk makluman sahaja.</p>
     <form method="POST" action="/admin/stok">
       <table class="data-table">
         <thead><tr><th>Gambar</th><th>Nama Biskut</th><th>Saiz</th><th>Stok Semasa (bekas)</th></tr></thead>
