@@ -198,6 +198,16 @@
     "active": true
   },
   {
+    "id": "P31",
+    "name": "Biskut Kacang Mazola",
+    "size": "",
+    "price": 25,
+    "description": "Biskut kacang klasik yang lembut dan cair di mulut, dibuat dengan minyak Mazola dan dihiasi kacang badam di atas.",
+    "image": "biskut-kacang-mazola.jpg",
+    "active": true,
+    "agentDiscount": 3
+  },
+  {
     "id": "P21",
     "name": "Untaian Kasih",
     "size": "48-50 pcs",
@@ -269,7 +279,7 @@
     "price": 55,
     "description": "Kotak hadiah eksklusif bertali berisi balang biskut — sesuai sebagai hadiah raya untuk keluarga dan rakan.",
     "note": "*Corak kotak bergantung pada stok semasa daripada pembekal.",
-    "image": "gift-box.jpg",
+    "image": "gift-box-v2.jpg",
     "active": true
   }
 ]

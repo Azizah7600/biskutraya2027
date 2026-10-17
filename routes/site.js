@@ -33,7 +33,7 @@ function registerSiteRoutes(app) {
     const products = getActiveProducts();
     res.send(layout({
       title: 'Katalog Biskut Raya 2027',
-      description: 'Katalog Biskut Raya 2027 Jijah Bake4U — 30 pilihan biskut, harga dari RM26 sebekas.',
+      description: 'Katalog Biskut Raya 2027 Jijah Bake4U — 31 pilihan biskut, harga dari RM25 sebekas.',
       activeNav: 'produk',
       bodyHtml: pages.productsBody(products),
     }));

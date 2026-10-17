@@ -122,7 +122,7 @@ function homeBody() {
         </div>
         <div class="hero-highlights">
           <div class="hero-highlight-item"><span class="hero-highlight-icon" aria-hidden="true">&#10022;</span>21 TAHUN DI PASARAN</div>
-          <div class="hero-highlight-item"><span class="hero-highlight-icon" aria-hidden="true">&#10022;</span>30 PILIHAN BISKUT</div>
+          <div class="hero-highlight-item"><span class="hero-highlight-icon" aria-hidden="true">&#10022;</span>31 PILIHAN BISKUT</div>
           <div class="hero-highlight-item"><span class="hero-highlight-icon" aria-hidden="true">&#10022;</span>BAYARAN MUDAH &amp; SELAMAT</div>
         </div>
       </div>
@@ -160,8 +160,8 @@ function homeBody() {
         </div>
         <div class="promo-card">
           <div class="promo-icon">💰</div>
-          <h3>HARGA DARI RM26</h3>
-          <p>Harga ikut jenis biskut — dari RM26 sebekas. Ada Combo Box &amp; Gift Box.</p>
+          <h3>HARGA DARI RM25</h3>
+          <p>Harga ikut jenis biskut — dari RM25 sebekas. Ada Combo Box &amp; Gift Box.</p>
         </div>
         <div class="promo-card">
           <div class="promo-icon">📅</div>
@@ -243,7 +243,7 @@ function productsBody(products) {
 
 function caraTempahanBody() {
   const steps = [
-    { n: '01', t: 'PILIH BISKUT', d: 'Layari 30 pilihan biskut raya kami dan pilih biskut kegemaran keluarga anda.' },
+    { n: '01', t: 'PILIH BISKUT', d: 'Layari 31 pilihan biskut raya kami dan pilih biskut kegemaran keluarga anda.' },
     { n: '02', t: 'ISI MAKLUMAT', d: 'Semak troli, isi nama, alamat dan pilihan penghantaran / pickup, kemudian hantar tempahan.' },
     { n: '03', t: 'BAYAR', d: 'Bayar penuh secara online melalui ToyyibPay, ATAU buat pindahan bank dan muat naik resit di website.' },
     { n: '04', t: 'TERIMA BISKUT RAYA', d: 'Biskut raya akan disediakan mengikut jadual penghantaran/pickup. Nak tambah biskut? Buka Semak Tempahan Saya bila-bila masa.' },

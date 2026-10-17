@@ -2,12 +2,12 @@
 
 > **Laman baru (salinan daripada laman Ansuran Biskut Raya 2027), dengan perubahan:**
 > - Tajuk: **TEMPAHAN BISKUT RAYA JIJAH BAKE4U 2027**. No. tempahan bermula `TBR-` (bukan `JB4U-`).
-> - **30 produk** ikut Katalog Biskut Raya 2027 (tambah Snow Almond, Rainbow Cookies, Mix Pack 4 Jenis, Mix Pack 6 Jenis, Pandan Nyoir RM40, Combo Box RM36, Gift Box RM55 — medan `"note"` = catatan kecil di bawah penerangan).
-> - **Harga ikut setiap biskut** (RM26–RM41). Ubah harga dalam `catalog/products.json` (medan `"price"`).
+> - **31 produk** ikut Katalog Biskut Raya 2027 (tambah Snow Almond, Rainbow Cookies, Mix Pack 4 Jenis, Mix Pack 6 Jenis, Pandan Nyoir RM40, Combo Box RM36, Gift Box RM55 — medan `"note"` = catatan kecil di bawah penerangan).
+> - **Harga ikut setiap biskut** (RM25–RM41). Ubah harga dalam `catalog/products.json` (medan `"price"`).
 > - **TIADA ansuran.** Pelanggan bayar penuh: jumlah biskut + kos postage.
 > - **Dua cara bayar:** ToyyibPay, ATAU pindahan bank + muat naik resit. Resit disemak admin di `/admin/resit` (SAHKAN / TOLAK). Fail resit disimpan dalam `data/receipts/` (folder `data/` mesti Volume kekal di Railway).
 > - **Tambah biskut kemudian:** pelanggan buka *Semak Tempahan Saya* → **+ TAMBAH BISKUT**. Setiap tambahan jadi satu bayaran baru (termasuk beza kos postage jika bekas bertambah). Hanya untuk biskut yang masih ada stok.
-> - Harga ejen: harga biskut **tolak RM5 sebekas** (komisyen RM5) bermula 50 bekas terkumpul. **Produk bawah RM39 (Mix Pack 4 & 6, Combo Box): tolak RM4 sahaja; Rainbow Cookies: tolak RM3** (medan `"agentDiscount": 3` dalam katalog) — automatik ikut harga (`AGENT_LOW_PRICE_THRESHOLD` dalam `lib/helpers.js`). Tetapan dalam `lib/helpers.js` → `AGENT_PRICE_TIERS`.
+> - Harga ejen: harga biskut **tolak RM5 sebekas** (komisyen RM5) bermula 50 bekas terkumpul. **Produk bawah RM39 (Mix Pack 4 & 6, Combo Box): tolak RM4 sahaja; Rainbow Cookies & Biskut Kacang Mazola (RM25): tolak RM3** (medan `"agentDiscount": 3` dalam katalog) — automatik ikut harga (`AGENT_LOW_PRICE_THRESHOLD` dalam `lib/helpers.js`). Tetapan dalam `lib/helpers.js` → `AGENT_PRICE_TIERS`.
 > - **Stok:** admin isi stok di `/admin/stok`. Stok berkurang automatik setiap tempahan / tambahan. Pelanggan hanya boleh **tambah biskut selagi ada stok**.
 > - Akaun bank lalai: Maybank 5630 1928 4855 (Bake For You Enterprise) — boleh ditukar melalui Environment Variables.
 
